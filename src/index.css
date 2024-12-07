@@ -4,11 +4,25 @@
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 #root {
   min-height: 100svh;
+  max-height: 100svh;
   display: flex;
   flex-direction: column;
   background-color: rgb(72, 72, 72);
+}
+
+*::-webkit-scrollbar {
+  height: 4px;
+  width: 4px;
+}
+*::-webkit-scrollbar-track {
+  background-color: #e5e6eb4c;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #64748b;
+  border-radius: 8px;
 }
