@@ -77,6 +77,7 @@ export default function Chat() {
     if (socket.current) {
       socket.current.close();
       setConnected(false);
+      setMessages([]);
     }
   }
 
